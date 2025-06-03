@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in from</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .maincontainer{
+display: flex;
+height: 100vh;
+background-color: #e6e5e4;
+justify-content: center;
+align-items: center;
+
+    }
+      .container{
+        height: 420px;
+        width: 300px;
+        display: inline-block;
+        background-color: rgb(56, 161, 165);
+        vertical-align: center;
+        margin-top: 3%;
+        text-align: center;
+        padding: 30px;
+        outline: 3px solid rgb(157, 171, 172);
+        border-radius: 15px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+         box-shadow: 0px 10px 10px 10px #5da791  ;
+         animation: FadeIn 10s ;
+       transition: all 0.3s ease-in-out;
+
+    }
+    .container:hover {
+         transform: scale(1.1);
+    }
+     @keyframes FadeIn {
+        0% {opacity: 0;}
+        50% { opacity: 5;}
+        100% { opacity: ;}
+        
+    }
+    input{
+        padding: 10px;
+        width: 75%;
+        margin-top: 10px;
+        outline: 1px solid rgb(0, 0, 0) ;
+        border: 1px solid rgb(116, 201, 196);
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        animation: SlideIn 1s ;
+    }
+    @keyframes SlideIn {
+        0%{ transform: translateX(-50%);}
+        100%{ transform: translateX(0%);}
+        
+    }
+    input:hover{
+        transform: scale(1.1);
+        border: 3px solid rgb(24, 221, 211);
+        font-weight: bold;
+
+    }
+    
+    .loginbt{
+        padding: 6px;
+        margin-top: 15px;
+        border: 2px solid rgb(0, 255, 234);
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        transform: rotate(5deg);
+        font-family:Georgia, 'Times New Roman', Times, serif;
+
+        
+    }
+    .loginbt:hover{
+     transform: scale(1.1);
+     border: 3px solid rgb(19, 252, 69);
+     color: rgb(17, 231, 17);
+     font-weight: bold;
+     font-family: 'Times New Roman', Times, serif;
+    }
+    .newac{
+          padding: 10px;
+        width: 75%;
+        margin-top: 15px;
+        outline: 1px solid rgb(3, 240, 149) ;
+        border: 1px solid rgb(128, 233, 241);
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(255, 255, 255);
+        
+        
+    }
+    a{
+        text-decoration: none;
+        color: rgb(1, 2, 2);
+        transition: all 0.3s ease-in-out;
+    }
+      a:hover{
+         color: rgb(12, 168, 230);
+       font-weight: bold;
+    }
+    span{
+        margin-top: 20px;
+        display: inline-block;
+    }
+  p{    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: antiquewhite;
+
+}
+.google{
+     padding: 10px;
+        width: 75%;
+        margin-top: 10px;
+        outline: 1px solid rgb(3, 196, 255) ;
+        border: 1px solid rgb(23, 255, 224);
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        
+    
+}
+.google:hover{
+    transform: scale(1.1);
+        border: 3px solid rgb(12, 240, 228);
+        font-weight: bold;
+
+
+}
+</style>
+<body>
+    
+
+   <div class="maincontainer"> <div class="container">
+     <h1 class="form-name"> Welcome <br>to <br>the our website</h1>
+     <input type='email , number' placeholder="Your email or phone number">
+     <input type="password" placeholder="Your password"><br>
+     <button class="loginbt">Log in</button><br>
+     
+     <span><a href="# " class="newac">Create a new account</a></span>
+     <p>or</p>
+    <button class="google"><img src="http://www.google.com" alt="continue with google"></button>
+    </div>
+    </div>
+</body>
+</html>
